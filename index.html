@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>First Training</title>
-  <!-- meta -->
-  <meta charset="utf-8" />
-  <meta name="description" content="Personal Site">
-  <meta name="author" content="GA Student">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- styles -->
-  <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <!-- scripts -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <title> Lamar Smith's Personal Portfolio </title>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal Site">
+    <meta name="author" content="GA Student">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Milonga">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great">
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/jquery-3.1.1.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="https://image.ibb.co/hGgAVa/LGOG.png">
 </head>
+<header>
+    <nav class="nav">
+        <ul>
+        <li class="home"><a href="#">Home</a></li>
+            <li class="news">
+                <div class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                    <div class="dropdown-content">
+                        <a href="#">Github</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+                <li class="contact"><a href="#">Resume</a></li>
+                
+        </ul>
+    </nav>
+</header>
+
 <body>
-  <div id="page-wrapper">
-    <h1>My Personal Page!</h1>
-  </div>
+    <div id="wrapper">
+        <div id="pic">
+            <img src="https://image.ibb.co/giiUOv/outeros.png">
+        </div>
+        <span class="Intro">
+
+            <em>Lamar Smith <br> Web &#9679; Graphics &#9679; Design</em>
+
+        </span>
+        <div id="socialMedia">
+            <a href="https://twitter.com/lamar5503">
+                <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/lamar-smith-08343391">
+                <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" />
+            </a>
+            <a href="mailto:Lamar5503@me.com">
+                <img title="Instagram" alt="RSS" src="http://www.saymit.com/email-signatures/icons/256x256/a.png" />
+            </a>
+        </div>
+        <div id="left">
+            <h1>Projects</h1>
+            <hr>
+            <p>
+                <a href="https://github.com/LamarSmith92/wdi-fundamentals-memorygame"> <img src="https://image.ibb.co/hM6Kqa/sized.png"> WDI Memory Game</a>
+            </p>
+        </div>
+        <div id="center">
+            <h1>Welcome</h1>
+            <hr>
+            <article>
+                <p>
+                    Hello, I am <em>Lamar Smith</em>, a Bay Area-Based Junior Web Developer. I am 24 years old and, I was born in Pittsburgh, Pennsylvania. I grew up playing sports until I graduated high school. After high school I decided to get into personal fitness and speed training. I coached kids mostly in urban areas to keep them out of trouble and be a postive mentor. After moving to Colorado with my with my older brother last year, who was teaching himself how to code. I decided to dive into it and it turned out to be something I really enojyed. I am currently taking a web development immersive course at General Assembly in San francisco, California and, someday plan to work for a Fotune 500 tech company or local start-up. I am very motivated and prepared to challengenge myself to accomplish set goals. My goal overall is to give back to my community by teaching minorities in low-income areas how to code in a cool, fun way, and that anything is possible.
+                </p>
+            </article>
+        </div>
+        <div id="right">
+            <h1>Upcoming Events</h1>
+            <hr>
+            <p>
+            <ul>
+               <li> <small><a href="https://www.eventbrite.com/e/techup-career-fair-san-francisco-tech-diversity-networking-allyship-tickets-31728607118">TechUp Career Fair San Francisco</a> <br>Sat, February 25, 2017</small></li>
+               </ul>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <small><p>Copyright&copy; 2017 Smith Dev Inc. All rights reserved </small><img src="https://image.ibb.co/hGgAVa/LGOG.png" width="22" height="22" alt="logo">
+        </p>
+    </footer>
 </body>
+<script>
+$('div').on('click', function() {
+    $(this).toggleClass('show-description');
+});
+</script>
+
 </html>

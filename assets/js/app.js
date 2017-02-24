@@ -1,2 +1,5 @@
 // sanity check
-console.log("app.js linked.");
+
+ $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
